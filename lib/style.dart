@@ -1,0 +1,3 @@
+style(Map scope) {
+    return '';
+}
