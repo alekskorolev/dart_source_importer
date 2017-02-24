@@ -55,13 +55,12 @@ class SourceLoaderTransformer extends Transformer {
                 };
             }
         ''';
-        print(sources);
         var id = transform.primaryInput.id.changeExtension(".dart");
         transform.addOutput(new Asset.fromString(id, sources));
     }
     Future applyDart(Transform transform) async {
         String sourceContent = await transform.primaryInput.readAsString();
-        RegExp importRx = new RegExp(r"package\:dapp\/converters\/");
+        RegExp importRx = new RegExp(r"package\:source\_importer\/");
         sourceContent = sourceContent.replaceAllMapped(importRx, (Match match) {
             return './';
         });

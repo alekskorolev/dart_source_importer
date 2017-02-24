@@ -1,11 +1,11 @@
 name: source_importer
 description: Import .html .css .scss .sass files as function in sourcepack
-version: 0.0.2
+version: 0.0.7
 author: Aleksandr Korolev <aleksandr@korolev.email>
 homepage: https://github.com/alekskorolev/dart_source_importer
 environment:
   sdk: '>=1.8.0 <2.0.0'
 dependencies:
-  sass: >=0.4.0
-  yaml: >=0.15.0
-  barback: >=0.15.0
+  sass: ^0.4.2
+  yaml: ^2.1.12
+  barback: ^0.15.2
